@@ -2,37 +2,51 @@
     display: flex;
     padding: 5px;
     overflow: hidden;
-    img{
-      max-width: 200px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    flex-wrap: wrap;
+    img {
+        max-width: 200px;
     }
-    &__information{
-      flex: 1 0 200px;
-      padding: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      h3{
+    &__information {
+        flex: 1 0 200px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h3 {
             font-weight: 700;
             font-size: 18px;
-      }
-      &_description{
+        }
+        &_description {
             letter-spacing: 2px;
             font-size: 18px;
-      }
-      &_price{
+        }
+        &_price {
             color: green;
             font-weight: 600;
-      }
-      &_btn{
+        }
+        &_btn {
             padding: 5px;
             border-radius: 5px;
             background-color: green;
             color: white;
             transition: all 0.3s;
-            &:hover{
-                  transform: scale(1.01);
-                  background-color: rgb(2, 190, 2);;
+            z-index: 5;
+            &:hover {
+                transform: scale(1.01);
+                background-color: rgb(2, 190, 2);
             }
-      }
+        }
+    }
+    &.open {
+        opacity: 1;
+    }
+    @media(max-width:410px){
+        justify-content: center;
+        border-top: 1px solid green;
+        &__information_price{
+            padding: 10px 0;
+        }
     }
 }

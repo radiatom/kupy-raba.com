@@ -1,0 +1,52 @@
+.commodity {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(105, 199, 105);
+    margin-bottom: 5px;
+    &__name {
+        width: 90px;
+        margin-right: 3px;
+        @media(max-width: 400px){
+            font-size: 13px;
+        }
+    }
+    &__btn {
+        min-width: 20px;
+        font-size: 20px;
+        padding: 2px;
+        margin-right: 3px;
+    }
+    &__number{
+        
+    }
+    &__price{
+        @media(max-width: 400px){
+            font-size: 13px;
+        }
+    }
+    &__cross {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        transform: rotate(-45deg);
+        cursor: pointer;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 2px;
+            background-color: rgb(255, 0, 0);
+        }
+        &:before {
+            transform: translate(-50%, -50%);
+        }
+        &:after {
+            transform: translate(-50%, -50%) rotate(-90deg);
+        }
+    }
+}
