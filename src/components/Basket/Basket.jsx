@@ -13,10 +13,24 @@ const Basket = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch({ type: "total" });
-    }, [data, data.number]);
+    }, [data]);
+
+    useEffect(() => {
+        if(data.length>0){
+            localStorage.setItem("items", JSON.stringify(data))
+        }
+    }, [data]);
+
+    useEffect(() => {
+        const items = JSON.parse(localStorage.getItem("items"));
+        if (items !== null) {
+            dispatch({ type: "addLocalStorage", localStorage: items });
+        }
+    }, []);
+    
     return (
         <div className="basket">
-            {data.length > 0 ? (
+            {data !==null? (
                 <div>
                     <h2>Корзина товарів:</h2>
                     {data.map((item) => {

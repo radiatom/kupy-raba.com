@@ -67,6 +67,9 @@ const initialState = {
 };
 const reducer = (state = initialState, action) => {
     switch (action.type) {
+        case "addLocalStorage": {
+                return { ...state, dataBascet: action.localStorage };
+        }
         case "addOrc": {
             if (state.dataBascet.some((item) => item.id === action.id)) {//перевірка, якщо в масиві вже є такий обєкт то нічого не добавляємо
                 return state;
