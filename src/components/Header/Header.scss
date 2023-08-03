@@ -1,0 +1,44 @@
+.header {
+    width: 100%;
+    background-color: rgb(50, 204, 50);
+    margin-bottom: 30px;
+    h1{
+      margin-left: 5px;
+      font-family: 'Rubik Glitch';
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__basket{
+      display: flex;
+      flex-direction: column;
+      background-color: aliceblue;
+      padding: 0 5px 3px 5px;
+      position: relative;
+      align-items: center;
+      cursor: pointer;
+      img{
+        position: relative;
+        left: -2px;
+            width: 30px;
+      }
+      span{
+            color: rgb(0, 162, 255);
+            font-weight: 600;
+      }
+      &_container{
+        overflow: hidden;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        min-width: 400px;
+        max-height: 0px;
+        transition: max-height 0.5s;
+        &.open{
+          max-height: 1000px;
+        }
+      }
+    }
+}

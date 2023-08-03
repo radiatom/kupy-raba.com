@@ -1,0 +1,38 @@
+.orc {
+    display: flex;
+    padding: 5px;
+    overflow: hidden;
+    img{
+      max-width: 200px;
+    }
+    &__information{
+      flex: 1 0 200px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      h3{
+            font-weight: 700;
+            font-size: 18px;
+      }
+      &_description{
+            letter-spacing: 2px;
+            font-size: 18px;
+      }
+      &_price{
+            color: green;
+            font-weight: 600;
+      }
+      &_btn{
+            padding: 5px;
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            transition: all 0.3s;
+            &:hover{
+                  transform: scale(1.01);
+                  background-color: rgb(2, 190, 2);;
+            }
+      }
+    }
+}
