@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/kupy-raba.com/static/css/main.a558601f.css",
+    "main.js": "/kupy-raba.com/static/js/main.4cf6a479.js",
+    "static/js/787.ac2f11a3.chunk.js": "/kupy-raba.com/static/js/787.ac2f11a3.chunk.js",
+    "static/media/photo_2023-08-03_08-27-35.jpg": "/kupy-raba.com/static/media/photo_2023-08-03_08-27-35.392cd867c1e0d0c66e0c.jpg",
+    "static/media/photo_2023-08-03_08-27-29.jpg": "/kupy-raba.com/static/media/photo_2023-08-03_08-27-29.5479cf821aaf418df080.jpg",
+    "static/media/photo_2023-08-03_08-27-26.jpg": "/kupy-raba.com/static/media/photo_2023-08-03_08-27-26.eb0e10a5b087ea893fe2.jpg",
+    "static/media/photo_2023-08-03_08-27-32.jpg": "/kupy-raba.com/static/media/photo_2023-08-03_08-27-32.e6d8685aa2e2bbaf2986.jpg",
+    "static/media/photo_2023-08-03_08-27-41.jpg": "/kupy-raba.com/static/media/photo_2023-08-03_08-27-41.e15f56666b32b69a9237.jpg",
+    "static/media/icon.svg": "/kupy-raba.com/static/media/icon.3e32839b0f86e858ce0acee162c597e2.svg",
+    "index.html": "/kupy-raba.com/index.html",
+    "main.a558601f.css.map": "/kupy-raba.com/static/css/main.a558601f.css.map",
+    "main.4cf6a479.js.map": "/kupy-raba.com/static/js/main.4cf6a479.js.map",
+    "787.ac2f11a3.chunk.js.map": "/kupy-raba.com/static/js/787.ac2f11a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a558601f.css",
+    "static/js/main.4cf6a479.js"
+  ]
+}
