@@ -15,19 +15,6 @@ const Basket = () => {
         dispatch({ type: "total" });
     }, [data]);
 
-    useEffect(() => {
-        if(data.length>0){
-            localStorage.setItem("items", JSON.stringify(data))
-        }
-    }, [data]);
-
-    useEffect(() => {
-        const items = JSON.parse(localStorage.getItem("items"));
-        if (items !== null) {
-            dispatch({ type: "addLocalStorage", localStorage: items });
-        }
-    }, []);
-    
     return (
         <div className="basket">
             {data !==null? (
