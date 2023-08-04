@@ -10,3 +10,6 @@ react, redux, redux-persist, local storage, scss
 Використовую localStorage для зберігання кошика;
 Збірка проекту -- через gulp;
 Працює в десктопному Chrome/Firefox, також є адаптив під мобільні девайси.
+
+#GitHub Pages
+https://radiatom.github.io/kupy-raba.com/
